@@ -1,0 +1,6 @@
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\bin\GT_App_Angular.dll
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\bin\GT_App_Angular.pdb
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\obj\Debug\GT_App_Angular.csprojResolveAssemblyReference.cache
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\obj\Debug\GT_App_Angular.dll
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\obj\Debug\GT_App_Angular.pdb
+C:\Users\mlamarca\Dropbox\GT_App_Angular\GT_App_Angular\GT_App_Angular\bin\GT_App_Angular.dll.config

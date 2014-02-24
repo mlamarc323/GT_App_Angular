@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Event Registration</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav"></ul>
+            </div>
+        </div>
+        <div ng-controller="EventController">
+            <hr />
+            <h3>Facilities</h3>
+            <ul class="thumbnails">
+                <li ng-repeat="facility in facility">
+                    <div class="row facility">
+                        <div class="well span9">
+                            <h4 class="well-title">{{facility.name}}</h4>
+                            <span>{{facility.location.address}}</span><br />
+                            <span>{{facility.location.city}}</span>, <span>{{facility.location.Province}}</span> <span>{{facility.location.Zip}}</span><br />
+                            <span>{{facility.location.Phone}}</span><br />
+                            <br />
+                            <h6>Courses</h6>
+                            <ul class="thumbnails">
+                                <li ng-repeat="courses in facility.courses">
+                                    <div class="row courses">
+                                        <div class="well span9">
+                                            <h6 class="well-title">{{facility.courses.name}}</h6>
+                                            <h8>TeeType</h8>
+                                            <br />
+                                            <ul class="thumbnails" style="list-style:none; display:inline">
+                                                <li>Hole Num</li>
+                                                <li>Yardage</li>
+                                                <li>Par</li>
+                                            </ul>
+                                            <ul class="thumbnails">
+                                                <li ng-repeat="TeeType in facility.courses.TeeType">
+                                                    <div class="row TeeType">
+                                                        <div class="well span9">
+                                                            <h6 class="well-title">{{facility.courses.TeeType.name}}</h6>
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-sanitize.js"></script>
+    <script src="js/app.js"></script>
+    <script src="/AngularSeed/app/js/Controllers/EventController.js"></script>
+
+</body>
+</html>
